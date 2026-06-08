@@ -23,7 +23,7 @@ MODEL_NAME = "gemini-2.0-flash"   # Core reasoning engine
 # FIX 1: The api_key was a hardcoded literal string instead of an env var lookup.
 # os.environ.get("AQ.Ab8RN6...") would always return None (no env var is named
 # like an API key). Read the correct env variable name instead.
-client = genai.Client(api_key=os.environ.get("AIzaSyBaBIehiASi1LxYjTowro_1PyLnghfUIP0"))
+client = genai.Client(api_key=os.environ.get("enter your api key"))
 
 # Define a strict, reproducible Pydantic output schema for the LLM ranking
 class RecommenderOutput(BaseModel):
